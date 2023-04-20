@@ -1,16 +1,19 @@
-import React from 'react'
+import { useState } from "react";
 import ProfileImg from "../assets/Images/ProfileImg.jpg";
 
 const VideoContainer = () => {
+  let [isAsideHover, setIsAsideHover] = useState(false);
   return (
-    <div>
-        <div>
-            <div>
-                <img/>
-            </div>
-        </div>
+    <div
+      className="bg-purple-300 h-[30vh]"
+      onMouseEnter={() => setIsAsideHover(!isAsideHover)}
+      onMouseLeave={() => setIsAsideHover(!isAsideHover)}
+    >
+      <h1 className="text-center">
+        Video Cards - {isAsideHover ? "True" : "False"}
+      </h1>
     </div>
-  )
-}
+  );
+};
 
-export default VideoContainer
+export default VideoContainer;

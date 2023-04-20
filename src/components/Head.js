@@ -19,7 +19,7 @@ const Head = () => {
   return (
     <nav className="bg-white grid sm:gap-0 gap-2 grid-flow-col items-center justify-between px-4 ss:px-7 py-[2px] h-[3.5rem] sticky top-0">
       <div className="flex  ss:gap-5 items-center h-[3rem]">
-        <AiOutlineMenu size={"1.3em"} className="cursor-pointer" />
+        <AiOutlineMenu size={22} className="cursor-pointer" />
         <img className="h-[53px]  cursor-pointer" src={Logo} alt="Logo" />
       </div>
 
